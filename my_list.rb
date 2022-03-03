@@ -9,7 +9,15 @@ class MyList
 
   #  method #each that yields successive members of @list
   def each(&block)
-    @list.each(&block)
+    return to_enum(:each) unless block_given?
+
+    counter = 0
+    while counter < @list.size
+      yield @list[counter]
+      counter += 1
+    end
+    @list
+  end
   end
 end
 
