@@ -17,7 +17,7 @@ end
 
 # Create our list
 list = MyList.new(1, 2, 3, 4)
-#<MyList: @list=[1, 2, 3, 4]>
+# <MyList: @list=[1, 2, 3, 4]>
 
 # Test #all?
 list.all? { |e| e < 5 }
