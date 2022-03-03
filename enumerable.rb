@@ -1,16 +1,16 @@
+# frozen_string_literal: true
+
+# Module Enumerable
 module Enumerable
   def all?(&block)
-    result = true 
-    each do |element| result = false
-      unless block.call(element)
+    result = true
+    each { |element| result = false unless block.call(element) }
     result
   end
-end
 
   def any?(&block)
     result = false
-      each do |element| result = true 
-      if block.call(element)
+    each { |element| result = true if block.call(element) }
     result
   end
 
