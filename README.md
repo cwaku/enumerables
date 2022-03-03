@@ -9,6 +9,12 @@
 
 - Ruby
 
+## Setup
+
+git clone https://github.com/cwaku/enumerables.git
+cd enumerables
+ruby my_list.rb
+
 ## Authors
 
 👤 **Ricky Mormor**
