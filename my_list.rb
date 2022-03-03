@@ -8,7 +8,7 @@ class MyList
   end
 
   #  method #each that yields successive members of @list
-  def each(&block)
+  def each()
     return to_enum(:each) unless block_given?
 
     counter = 0
@@ -18,7 +18,7 @@ class MyList
     end
     @list
   end
-  end
+end
 
 # Create our list
 list = MyList.new(1, 2, 3, 4)
