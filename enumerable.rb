@@ -1,5 +1,3 @@
-
-# Module Enumerable
 module Enumerable
   def all?(&block)
     result = true
